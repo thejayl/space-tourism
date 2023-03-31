@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./section.css" />
+
+    <script defer src="./script.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <img
+          class="header-logo"
+          src="./assets/shared/logo.svg"
+          alt="Logo for Space Tourism"
+        />
+        <div class="header-border"></div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item nav--active" href="#" data-nav="home"
+                ><span class="nav-num">00</span> Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-item" href="#" data-nav="destination"
+                ><span class="nav-num">01</span> Destination</a
+              >
+            </li>
+            <li>
+              <a class="nav-item" href="#" data-nav="crew"
+                ><span class="nav-num">02</span> Crew</a
+              >
+            </li>
+            <li>
+              <a class="nav-item" href="#" data-nav="technology"
+                ><span class="nav-num">03</span> Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="section section-home section--active">
+        <div class="section-container home-container">
+          <div class="home-information">
+            <p class="home-opening">So, you want to travel to</p>
+            <h2 class="home-title">Space</h2>
+            <p class="home-desc">
+              Let's face it; if you eant to go to space, you might as well
+              genuinely go to outer space and not hover kind of on ther edge of
+              it. Well sit back, and relax because we'll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <button class="btn-explore">Explore</button>
+        </div>
+      </section>
+
+      <section class="section section-destination">
+        <div class="section-container destination-container">
+          <h2 class="destination-title">
+            <span class="title-num">01</span>
+            <span class="title-text">Pick your destination</span>
+          </h2>
+          <div class="destination-information" data-destination="moon">
+            <div class="destination" data-info="moon">
+              <div class="destination-img"></div>
+              <div class="destination-details">
+                <nav class="destination-nav">
+                  <ul class="destination-nav-list">
+                    <li>
+                      <a
+                        class="destination-item destination--active"
+                        href="#"
+                        data-goto="moon"
+                      >
+                        Moon
+                      </a>
+                    </li>
+                    <li>
+                      <a class="destination-item" href="#" data-goto="mars">
+                        Mars
+                      </a>
+                    </li>
+                    <li>
+                      <a class="destination-item" href="#" data-goto="europa">
+                        Europa
+                      </a>
+                    </li>
+                    <li>
+                      <a class="destination-item" href="#" data-goto="titan">
+                        Titan
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="destination-content content-moon content--active">
+                  <h3 class="content-title">Moon</h3>
+                  <p class="moon-desc">
+                    See our planet as you’ve never seen it before. A perfect
+                    relaxing trip away to help regain perspective and come back
+                    refreshed. While you’re there, take in some history by
+                    visiting the Luna 2 and Apollo 11 landing sites.
+                  </p>
+                  <div class="content-info">
+                    <div class="content-distance">
+                      <p class="content-label">Avg. distance</p>
+                      <p class="content-length">384,400 km</p>
+                    </div>
+                    <div class="content-time">
+                      <p class="content-label">Est. travel time</p>
+                      <p class="content-length">3 days</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-content content-mars">
+                  <h3 class="content-title">Mars</h3>
+                  <p class="moon-desc">
+                    Don’t forget to pack your hiking boots. You’ll need them to
+                    tackle Olympus Mons, the tallest planetary mountain in our
+                    solar system. It’s two and a half times the size of Everest!
+                  </p>
+                  <div class="content-info">
+                    <div class="content-distance">
+                      <p class="content-label">Avg. distance</p>
+                      <p class="content-length">225 mil. km</p>
+                    </div>
+                    <div class="content-time">
+                      <p class="content-label">Est. travel time</p>
+                      <p class="content-length">9 months</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
