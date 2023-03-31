@@ -21,8 +21,8 @@
       href="./assets/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./general.css" />
-    <link rel="stylesheet" href="./section.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/section.css" />
 
     <script defer src="./script.js"></script>
 
@@ -64,6 +64,7 @@
       </header>
 
       <section class="section section-home section--active">
+        <div class="home-bg"></div>
         <div class="section-container home-container">
           <div class="home-information">
             <p class="home-opening">So, you want to travel to</p>
@@ -80,11 +81,15 @@
       </section>
 
       <section class="section section-destination">
+        <div class="destination-bg"></div>
         <div class="section-container destination-container">
-          <h2 class="destination-title">
-            <span class="title-num">01</span>
-            <span class="title-text">Pick your destination</span>
-          </h2>
+          <div class="destination-wrap">
+            <h2 class="destination-title">
+              <span class="title-num">01</span>
+              <span class="title-text">Pick your destination</span>
+            </h2>
+            <div class="destination-img" data-planet="moon"></div>
+          </div>
           <div class="destination-information" data-destination="moon">
             <div class="destination" data-info="moon">
               <div class="destination-img"></div>

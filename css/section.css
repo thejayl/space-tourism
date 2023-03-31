@@ -1,10 +1,21 @@
 /* ************************ */
 /* **** Section - home **** */
 /* ************************ */
-.section-home {
+/* .section-home {
   height: 100vh;
   position: relative;
-  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-image: url('../assets/home/background-home-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.home-bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url('../assets/home/background-home-desktop.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,6 +24,7 @@
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 64px;
 }
 
 .home-information {
@@ -71,12 +83,28 @@
 /* ******************************* */
 /* **** Section - destination **** */
 /* ******************************* */
-.section-destination {
+.destination-bg {
+  width: 100%;
   height: 100vh;
-  position: relative;
-  background-image: url('./assets/destination/background-destination-desktop.jpg');
+  position: fixed;
+  background-image: url('../assets/destination/background-destination-desktop.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.destination-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.destination-img[data-planet='moon'] {
+  background-image: url('../assets/destination/image-moon.png');
+}
+
+.destination-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 /* ******************************* */
